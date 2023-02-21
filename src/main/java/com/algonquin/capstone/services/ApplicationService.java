@@ -1,4 +1,4 @@
-package com.algonquin.loggy.services;
+package com.algonquin.capstone.services;
 
 public interface ApplicationService {
 

@@ -1,6 +1,6 @@
-package com.algonquin.loggy.inmemory;
+package com.algonquin.capstone.inmemory;
 
-import com.algonquin.loggy.services.ApplicationService;
+import com.algonquin.capstone.services.ApplicationService;
 
 public class ApplicationInMemory implements ApplicationService {
 
