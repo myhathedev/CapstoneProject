@@ -30,5 +30,61 @@
 		<servlet-name>LogoutServlet</servlet-name>
 		<url-pattern>/LogoutServlet</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>CreateQuestionServlet</display-name>
+		<servlet-name>CreateQuestionServlet</servlet-name>
+		<servlet-class>com.algonquin.capstone.servlets.CreateQuestionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateQuestionServlet</servlet-name>
+		<url-pattern>/CreateQuestionServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>QuestionManageServlet</display-name>
+		<servlet-name>QuestionManageServlet</servlet-name>
+		<servlet-class>com.algonquin.capstone.servlets.QuestionManageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>QuestionManageServlet</servlet-name>
+		<url-pattern>/QuestionManageServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>DeleteQuestionServlet</display-name>
+		<servlet-name>DeleteQuestionServlet</servlet-name>
+		<servlet-class>com.algonquin.capstone.servlets.DeleteQuestionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteQuestionServlet</servlet-name>
+		<url-pattern>/DeleteQuestionServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<description></description>
+		<display-name>UpdateQuestionServlet</display-name>
+		<servlet-name>UpdateQuestionServlet</servlet-name>
+		<servlet-class>com.algonquin.capstone.servlets.UpdateQuestionServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>UpdateQuestionServlet</servlet-name>
+		<url-pattern>/UpdateQuestionServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	 <servlet>
+       <servlet-name>ExamListServlet</servlet-name>
+       <servlet-class>com.example.ExamListServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+       <servlet-name>ExamListServlet</servlet-name>
+       <url-pattern>/ExamList</url-pattern>
+    </servlet-mapping>
 
 </web-app>

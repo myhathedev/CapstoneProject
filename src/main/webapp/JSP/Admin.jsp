@@ -15,14 +15,19 @@ if ((request.getSession(false).getAttribute("Admin") == null)) {
 %>
 <body>
 	<center>
-		<h2>Admin's Home</h2>
+		<h2>Admin Home Page</h2>
 	</center>
 
 	Welcome
-	<%=request.getAttribute("userName")%>
+	<%=session.getAttribute("Admin")%>
 
 	<div style="text-align: right">
 		<a href="<%=request.getContextPath()%>/LogoutServlet">Logout</a>
+	</div>
+	
+	<div>
+	<a href="JSP/NewQuestion.jsp"><button>Create New Question</button></a> <br/> <br />
+	<a href="<%=request.getContextPath()%>/QuestionManageServlet"><button>Question List</button></a>
 	</div>
 </body>
 </html>

@@ -23,6 +23,17 @@ if ((request.getSession(false).getAttribute("User") == null)) {
 	<div style="text-align: right">
 		<a href="<%=request.getContextPath()%>/LogoutServlet">Logout</a>
 	</div>
-
+	
+	
+	
+   <h3>Select an Exam</h3>
+    <form action="UserServlet" method="post">
+        <label for="examId">Exam:</label>
+        <select id="examId" name="examId">
+           <option value="${exam.exam_id}">${exam.exam_id} - ${exam.questions}</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Start Exam">
+    </form>
 </body>
 </html>
